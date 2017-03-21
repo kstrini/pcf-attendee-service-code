@@ -9,11 +9,11 @@ resources:
 - name: deploy-attendee-service
   type: cf
   source:
-    api: api.run-02.haas-66.pez.pivotal.io
+    api: https://api.local.pcfdev.io
     username: {{cf-user}}
     password: {{cf-password}}
-    organization: twhitney-pal
-    space: pal
+    organization: pcfdev-org
+    space: pcfdev-space
     skip_cert_check: true
 
 jobs:
