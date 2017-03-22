@@ -3,7 +3,7 @@ resources:
 - name: attendee-service-source
   type: git
   source:
-    uri: https://kstrini:02a49e0189bb6600da929bde5b336529aa39b961@github.com'/kstrini/pcf-attendee-service-code
+    uri: https://github.com/kstrini/pcf-attendee-service-code
     branch: concourse_deployment
 
 - name: deploy-attendee-service
