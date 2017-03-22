@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     uri: https://github.com/kstrini/pcf-attendee-service-code
-    branch: concourse_deployment
+    branch: master
 
 - name: deploy-attendee-service
   type: cf
@@ -35,7 +35,7 @@ jobs:
     file: attendee-service-source/ci/tasks/package.yml
   - put: deploy-attendee-service
     params:
-      manifest: attendee-service/manifest.yml
+      manifest: attendee-service-source/manifest.yml
       path: package-output/attendee-service.jar
 
 - name: smoke_test
